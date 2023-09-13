@@ -1,0 +1,458 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="topnav">
+  <a href="https://ecotourism.glitch.me/">Главная</a>
+  <a class="active" href="https://ecotourism.glitch.me/nature_reserves">Заповедники</a>
+  <a href="https://ecotourism.glitch.me/animals">Животные</a>
+  <a href="https://ecotourism.glitch.me/question">Задать вопрос</a>
+</div>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8636d5603d64a5c64c00b246095b8d977d7644f864a00c9914f9a14d8df2a62d&amp;width=1071&amp;height=502&amp;lang=ru_RU&amp;scroll=true"></script>
+<div style="float: left;">
+    <details>
+        <summary>Субъекты РФ</summary>
+        <a href="https://ecotourism.glitch.me/Altai_Territory" class="nubex2">Алтайский край</a>
+        <a href="https://ecotourism.glitch.me/Amur_region" class="nubex2">Амурская область</a>
+        <a href="https://ecotourism.glitch.me/Arkhangelsk_region" class="nubex2">Архангельская область</a>
+        <a href="https://ecotourism.glitch.me/Astrakhan_region" class="nubex2">Астраханская область</a>
+        <a href="https://ecotourism.glitch.me/Belgorod_region" class="nubex2">Белгородская область</a>
+        <a href="https://ecotourism.glitch.me/Bryansk_region" class="nubex2">Брянская область</a>
+        <a href="https://ecotourism.glitch.me/Vladimir_region" class="nubex2">Владимирская область</a>
+        <a href="https://ecotourism.glitch.me/Volgograd_region" class="nubex2">Волгоградская область</a>
+        <a href="https://ecotourism.glitch.me/Vologda_region" class="nubex2">Вологодская область</a>
+        <a href="https://ecotourism.glitch.me/Voronezh_region" class="nubex2">Воронежская область</a>
+        <a href="https://ecotourism.glitch.me/Donetsk_People_s_Republic" class="nubex2">Донецкая Народная Республика</a>
+        <a href="https://ecotourism.glitch.me/Jewish_JSC" class="nubex2">Еврейская АО</a>
+        <a href="https://ecotourism.glitch.me/Trans_Baikal_Territory" class="nubex2">Забайкальский край</a>
+        <a href="https://ecotourism.glitch.me/Zaporozhye_region" class="nubex2">Запорожская область</a>
+        <a href="https://ecotourism.glitch.me/Ivanovo_region" class="nubex2">Ивановская область</a>
+        <a href="https://ecotourism.glitch.me/Irkutsk_region" class="nubex2">Иркутская область</a>
+        <a href="https://ecotourism.glitch.me/Kabardino_Balkarian_Republic" class="nubex2">Кабардино-Балкарская Республика</a>
+        <a href="https://ecotourism.glitch.me/Kaliningrad_Region" class="nubex2">Калининградская область</a>
+        <a href="https://ecotourism.glitch.me/Kaluga_Region" class="nubex2">Калужская область</a>
+        <a href="https://ecotourism.glitch.me/Kamchatka_Territory" class="nubex2">Камчатский край</a>
+        <a href="https://ecotourism.glitch.me/Karachay_Cherkess_Republic" class="nubex2">Карачаево-Черкесская Республика</a>
+        <a href="https://ecotourism.glitch.me/Kemerovo_Region" class="nubex2">Кемеровская область</a>
+        <a href="https://ecotourism.glitch.me/Kirov_Region" class="nubex2">Кировская область</a>
+        <a href="https://ecotourism.glitch.me/Kostroma_Region" class="nubex2">Костромкая область</a>
+        <a href="https://ecotourism.glitch.me/Krasnodarskiy_Territory" class="nubex2">Краснодарский край</a>
+        <a href="https://ecotourism.glitch.me/Krasnoyarsk_Territory" class="nubex2">Красноярский край</a>
+        <a href="https://ecotourism.glitch.me/Kurgan_Region" class="nubex2">Курганская область</a>
+        <a href="https://ecotourism.glitch.me/Kursk_Region" class="nubex2">Курская область</a>
+        <a href="https://ecotourism.glitch.me/Leningrad_Region" class="nubex2">Ленинградская область</a>
+        <a href="https://ecotourism.glitch.me/Lipetsk_Region" class="nubex2">Липецкая область</a>
+        <a href="https://ecotourism.glitch.me/Luhansk_People_s_Republic" class="nubex2">Луганская Народная Республика</a>
+        <a href="https://ecotourism.glitch.me/Magadan_Region" class="nubex2">Магаданская область</a>
+        <a href="https://ecotourism.glitch.me/Moscow" class="nubex2">Москва</a>
+        <a href="https://ecotourism.glitch.me/Moscow_Region" class="nubex2">Московская область</a>
+        <a href="https://ecotourism.glitch.me/Murmansk_Region" class="nubex2">Мурманская область</a>
+        <a href="https://ecotourism.glitch.me/Nenets_AO" class="nubex2">Ненецкий АО</a>
+        <a href="https://ecotourism.glitch.me/Nizhny_Novgorod_Region" class="nubex2">Нижегородская область</a>
+        <a href="https://ecotourism.glitch.me/Novgorod_Region" class="nubex2">Новгородская область</a>
+        <a href="https://ecotourism.glitch.me/Novosibirsk_Region" class="nubex2">Новосибирская область</a>
+        <a href="https://ecotourism.glitch.me/Omsk_Region" class="nubex2">Омская область</a>
+        <a href="https://ecotourism.glitch.me/Orenburg_Region" class="nubex2">Оренбургская область</a>
+        <a href="https://ecotourism.glitch.me/Oryol_Region" class="nubex2">Орловская область</a>
+        <a href="https://ecotourism.glitch.me/Penza_Region" class="nubex2">Пензенская область</a>
+        <a href="https://ecotourism.glitch.me/Perm_Territory" class="nubex2">Пермский край</a>
+        <a href="https://ecotourism.glitch.me/Primorsky_Territory" class="nubex2">Приморский край</a>
+        <a href="https://ecotourism.glitch.me/Pskov_Region" class="nubex2">Псковская область</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Adygea" class="nubex2">Республика Адыгея</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Altai" class="nubex2">Республика Алтай</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Bashkortostan" class="nubex2">Республика Башкортостан</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Buryatia" class="nubex2">Республика Бурятия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Dagestan" class="nubex2">Республика Дагестан</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Ingushetia" class="nubex2">Республика Ингушетия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Kalmykia" class="nubex2">Республика Калмыкия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Karelia" class="nubex2">Республика Карелия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Komi" class="nubex2">Республика Коми</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Crimea" class="nubex2">Республика Крым</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Mari_El" class="nubex2">Республика Марий Эл</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Mordovia" class="nubex2">Республика Мордовия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Sakha" class="nubex2">Республика Саха</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_North_Ossetia_Alania" class="nubex2">Республика Северная Осетия-Алания</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Tatarstan" class="nubex2">Республика Татарстан</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Tyva" class="nubex2">Республика Тыва</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Khakassia" class="nubex2">Республика Хакасия</a>
+        <a href="https://ecotourism.glitch.me/Rostov_Region" class="nubex2">Ростовская область</a>
+        <a href="https://ecotourism.glitch.me/Ryazan_Region" class="nubex2">Рязанская область</a>
+        <a href="https://ecotourism.glitch.me/Samara_Region" class="nubex2">Самарская область</a>
+        <a href="https://ecotourism.glitch.me/Saint_Petersburg" class="nubex2">Санкт-Петербург</a>
+        <a href="https://ecotourism.glitch.me/Saratov_Region" class="nubex2">Саратовская область</a>
+        <a href="https://ecotourism.glitch.me/Sakhalin_Region" class="nubex2">Сахалинская область</a>
+        <a href="https://ecotourism.glitch.me/Sverdlovsk_Region" class="nubex2">Свердловская область</a>
+        <a href="https://ecotourism.glitch.me/Sevastopol" class="nubex2">Севастополь</a>
+        <a href="https://ecotourism.glitch.me/Smolensk_Region" class="nubex2">Смоленская область</a>
+        <a href="https://ecotourism.glitch.me/Stavropol_Territory" class="nubex2">Ставропольский край</a>
+        <a href="https://ecotourism.glitch.me/Tambov_Region" class="nubex2">Тамбовская область</a>
+        <a href="https://ecotourism.glitch.me/Tver_Region" class="nubex2">Тверская область</a>
+        <a href="https://ecotourism.glitch.me/Tomsk_Region" class="nubex2">Томская область</a>
+        <a href="https://ecotourism.glitch.me/Tula_Region" class="nubex2">Тульская область</a>
+        <a href="https://ecotourism.glitch.me/Tyumen_Region" class="nubex2">Тюменская область</a>
+        <a href="https://ecotourism.glitch.me/Udmurt_Republic" class="nubex2">Удмуртская Республика</a>
+        <a href="https://ecotourism.glitch.me/Ulyanovsk_Region" class="nubex2">Ульяновская область</a>
+        <a href="https://ecotourism.glitch.me/Khabarovsk_Territory" class="nubex2">Хабаровский край</a>
+        <a href="https://ecotourism.glitch.me/Khanty_Mansiysk_JSC" class="nubex2">Ханты-Мансийский АО</a>
+        <a href="https://ecotourism.glitch.me/Kherson_Region" class="nubex2">Херсонская область</a>
+        <a href="https://ecotourism.glitch.me/Chelyabinsk_Region" class="nubex2">Челябинская область</a>
+        <a href="https://ecotourism.glitch.me/Chechen_Republic" class="nubex2">Чеченская Республика</a>
+        <a href="https://ecotourism.glitch.me/Chuvash_Republic" class="nubex2">Чувашская Республика</a>
+        <a href="https://ecotourism.glitch.me/Chukotsiy_JSC" class="nubex2">Чукотсий АО</a>
+        <a href="https://ecotourism.glitch.me/Yamalo_Nenets_JSC" class="nubex2">Ямало-Ненецкий АО</a>
+        <a href="https://ecotourism.glitch.me/Yaroslavl_Region" class="nubex2">Ярославская область</a>
+    </details>
+</div>
+<div style="float: right;">
+    <form class="login_form_3">
+        <nav>
+            <h1>Московская область</h1>
+            <ul>
+                <li><a href="#section1">Приокско-Террасный заповедник</a></li>
+                <li><a href="#section2">Завидово</a></li>
+                <li><a href="#section3">Озеро Киево и его котловина</a></li>
+                <li><a href="#section4">Парк Середниково</a></li>
+                <li><a href="#section5">Исток Москвы-реки</a></li>
+                <li><a href="#section6">Озеро Бисерово</a></li>
+                <li><a href="#section7">Пущинская усадьба на Оке</a></li>
+                <li><a href="#section8">Семь ключей</a></li>
+                <li><a href="#section9">Лохин остров</a></li>
+                <li><a href="#section10">Звенигородское городище</a></li>
+                <li><a href="#section11">Стратотип гжельского яруса</a></li>
+                <li><a href="#section12">Дендрологический парк «Волхонка»</a></li>
+                <li><a href="#section13">Ключевое болото «Кольчиха»</a></li>
+                <li><a href="#section14">Озеро Алпатово и его котловина</a></li>
+                <li><a href="#section15">Котловина озера Михалевское</a></li>
+                <li><a href="#section16">Нагорная дубрава Улитинская</a></li>
+                <li><a href="#section17">Журавлиная родина</a></li>
+                <li><a href="#section18">Звенигородская биостанция МГУ и карьер Сима</a></li>
+                <li><a href="#section19">Теряевские пруды</a></li>
+                <li><a href="#section20">Дубровицкий лес</a></li>
+                <li><a href="#section21">Лопасненский еловый остров</a></li>
+                <li><a href="#section22">Москворецкий пойменный заказник</a></li>
+                <li><a href="#section23">Большегридинский</a></li>
+                <li><a href="#section24">Черустинский лес</a></li>
+                <li><a href="#section25">Урочище «Торфоболото»</a></li>
+                <li><a href="#section26">Тростенское озеро и его окружение</a></li>
+                <li><a href="#section27">Долина реки Нары</a></li>
+                <li><a href="#section28">Арюшина гора</a></li>
+                <li><a href="#section29">Варавинский овраг</a></li>
+                <li><a href="#section30">Даниловское болото</a></li>
+                <li><a href="#section31">Большое и Малое Туголянские озера</a></li>
+            </ul>
+        </nav>
+        <h1 id="section1">Приокско-Террасный заповедник</h1>
+        <h4>Особо охраняемая природная территория Российской Федерации.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1945 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>50 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Приокско-Террасный_заповедник" class="nubex1">Приокско-Террасный заповедник</a>
+        <h1></h1>
+        <h1 id="section2">Завидово</h1>
+        <h4>Популярный курортный регион.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1972 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>1250 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://wikiway.com/russia/zavidovo/#:~:text=Завидово%20–%20популярный%20курортный%20регион%2C,туристические%20базы%2C%20элитные%20дачные%20поселки" class="nubex1">Завидово</a>
+        <h1></h1>
+        <h1 id="section3">Озеро Киево и его котловина</h1>
+        <h4>Озеро, расположенное на территории города Лобня Московской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1966 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,255 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Киёво_(озеро)" class="nubex1">Озеро Киево и его котловина</a>
+        <h1></h1>
+        <h1 id="section4">Парк Середниково</h1>
+        <h4>Прекрасный образец русской загородной архитектуры и ландшафтного искусства.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1966 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,53 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://wikiway.com/russia/usadba-serednikovo/" class="nubex1">Парк Середниково</a>
+        <h1></h1>
+        <h1 id="section5">Исток Москвы-реки</h1>
+        <h4>Водная артерия столицы, её важная транспортная магистраль и основной источник пресной воды.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>2 тыс. до н.э.</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>17600 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://wikiway.com/russia/moskva/moskva-reka/" class="nubex1">Исток Москвы-реки</a>
+        <h1></h1>
+        <h1 id="section6">Озеро Бисерово</h1>
+        <h4>Излюбленное место досуга многих москвичей, а также гостей региона.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1990 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,4 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://wikiway.com/russia/biserovo-ozero/" class="nubex1">Озеро Бисерово</a>
+        <h1></h1>
+        <h1 id="section7">Пущинская усадьба на Оке</h1>
+        <h4>Загородная усадьба на северо-западе современного города Пущино.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1985 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,0956 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Пущино-на-Оке" class="nubex1">Пущинская усадьба на Оке</a>
+        <h1></h1>
+        <h1 id="section8">Семь ключей</h1>
+        <h4>Памятник природы регионального (областного) значения Московской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>2017 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>1,4466 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Семь_ключей" class="nubex1">Семь ключей</a>
+        <h1></h1>
+        <h1 id="section9">Лохин остров</h1>
+        <h4>Местность в ближнем Подмосковье между руслом Москвы-реки и её старицей.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1986 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>4,3 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Лохин_остров" class="nubex1">Лохин остров</a>
+        <h1></h1>
+        <h1 id="section10">Звенигородское городище</h1>
+        <h4>Памятник природы регионального (областного) значения Московской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1966 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,0735 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Звенигородское_городище" class="nubex1">Звенигородское городище</a>
+        <h1></h1>
+        <h1 id="section11">Стратотип гжельского яруса</h1>
+        <h4>Геологический верхний ярус верхнего отдела карбона.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1980 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,15 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Гжельский_ярус" class="nubex1">Стратотип гжельского яруса</a>
+        <h1></h1>
+        <h1 id="section12">Дендрологический парк «Волхонка»</h1>
+        <h4>Одна из главных достопримечательностей Ногинска.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1986 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,0668 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://travel.riamo.ru/napravleniya/gorkovskoe/park-volkhonka" class="nubex1">Дендрологический парк «Волхонка»</a>
+        <h1></h1>
+        <h1 id="section13">Ключевое болото «Кольчиха»</h1>
+        <h4>Памятник природы регионального (областного) значения Московской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1987 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,6491 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Кольчиха" class="nubex1">Ключевое болото «Кольчиха»</a>
+        <h1></h1>
+        <h1 id="section14">Озеро Алпатово и его котловина</h1>
+        <h4>Озеро в Московской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1986 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>1,2 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Алпатово_(озеро)" class="nubex1">Озеро Алпатово и его котловина</a>
+        <h1></h1>
+        <h1 id="section15">Котловина озера Михалевское</h1>
+        <h4>Озеро в Можайском районе Московской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>2007 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>1,56 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Михалёвское_(озеро,_Московская_область)" class="nubex1">Котловина озера Михалевское</a>
+        <h1></h1>
+        <h1 id="section16">Нагорная дубрава Улитинская</h1>
+        <h4>Памятник природы регионального (областного) значения Московской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1987 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,154 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Нагорная_дубрава_Улитинская" class="nubex1">Нагорная дубрава Улитинская</a>
+        <h1></h1>
+        <h1 id="section17">Журавлиная родина</h1>
+        <h4>Государственный природный заказник регионального значения в Талдомском и Сергиево-Посадском районах Московской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1979 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>110 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Журавлиная_родина" class="nubex1">Журавлиная родина</a>
+        <h1></h1>
+        <h1 id="section18">Звенигородская биостанция МГУ и карьер Сима</h1>
+        <h4>Ботанический и зоологический государственный природный заказник.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1981 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>13 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Звенигородская_биостанция_МГУ_и_карьер_Сима" class="nubex1">Звенигородская биостанция МГУ и карьер Сима</a>
+        <h1></h1>
+        <h1 id="section19">Теряевские пруды</h1>
+        <h4>Государственный природный заказник регионального значения.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1981 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,4 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Теряевские_пруды" class="nubex1">Теряевские пруды</a>
+        <h1></h1>
+        <h1 id="section20">Дубровицкий лес</h1>
+        <h4>Государственный природный заказник областного значения.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>2017 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>5,61 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://verhovye.ru/o-nas/proekty/sozdannye-oopt/gosudarstvennyj-prirodnyj-zakaznik-oblastnogo-znacheniya-dubrovitskij-les/" class="nubex1">Дубровицкий лес</a>
+        <h1></h1>
+        <h1 id="section21">Лопасненский еловый остров</h1>
+        <h4>Государственный природный заказник областного значения.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1986 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>4,5 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://hod-sch33-bogorodsk.edumsko.ru/folders/post/3225112" class="nubex1">Лопасненский еловый остров</a>
+        <h1></h1>
+        <h1 id="section22">Москворецкий пойменный заказник</h1>
+        <h4>Государственный природный заказник областного значения в городском округе Воскресенск и Раменском городском округе.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1986 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>100 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Москворецкий_пойменный_заказник" class="nubex1">Москворецкий пойменный заказник</a>
+        <h1></h1>
+        <h1 id="section23">Большегридинский</h1>
+        <h4>Государственный природный заказник областного значения.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1988 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>25 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="http://tourportal.dgrechko.wi6.ru/places/bolsegridinskij-kompleksnyj-zakaznik" class="nubex1">Большегридинский</a>
+        <h1></h1>
+        <h1 id="section24">Черустинский лес</h1>
+        <h4>Государственный природный заказник областного значения.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1986 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>220 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="http://tourportal.dgrechko.wi6.ru/places/kompleksnyj-zakaznik-cerustinskij-les" class="nubex1">Черустинский лес</a>
+        <h1></h1>
+        <h1 id="section25">Урочище «Торфоболото»</h1>
+        <h4>Государственный природный заказник областного значения.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1987 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>6,41 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="http://www.oopt.aari.ru/oopt/Урочище-Торфоболото" class="nubex1">Урочище «Торфоболото»</a>
+        <h1></h1>
+        <h1 id="section26">Тростенское озеро и его окружение</h1>
+        <h4>Государственный природный заказник (комплексный) регионального (областного)
+            значения Московской области, целью которого является сохранение ненарушенных природных
+            комплексов, их компонентов в естественном состоянии.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1966 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>7,3 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Тростенское_озеро_и_его_окружение" class="nubex1">Тростенское озеро и его окружение</a>
+        <h1></h1>
+        <h1 id="section27">Долина реки Нары</h1>
+        <h4>Государственный природный заказник (комплексный) регионального (областного)
+            значения Московской области, целью которого является сохранение ненарушенных
+            природных комплексов, их компонентов в естественном состоянии.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1987 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>3,78 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Долина_реки_Нара" class="nubex1">Долина реки Нары</a>
+        <h1></h1>
+        <h1 id="section28">Арюшина гора</h1>
+        <h4>Государственный природный комплексный заказник регионального значения в Орехово-Зуевском городском округе Московской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>2017 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>15 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Арюшина_гора" class="nubex1">Арюшина гора</a>
+        <h1></h1>
+        <h1 id="section29">Варавинский овраг</h1>
+        <h4>Государственный природный заказник (комплексный) регионального (областного) значения Московской области,
+            целью которого является сохранение ненарушенных природных комплексов, их компонентов в естественном состоянии.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1987 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>2,6 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Варавинский_овраг" class="nubex1">Варавинский овраг</a>
+        <h1></h1>
+        <h1 id="section30">Даниловское болото</h1>
+        <h4>Государственный природный заказник.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1988 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>3,7 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://forest.ru/news/fires/the_threat_of_drainage_danilov_passed_swamp/#:~:text=Даниловское%20болото%20–%20ключевая%20орнитологическая,в%20Павлово-Посадском%20районе%20Московской%20области" class="nubex1">Даниловское болото</a>
+        <h1></h1>
+        <h1 id="section31">Большое и Малое Туголянские озера</h1>
+        <h4>Природная территория «Большое и Малое Туголянские озёра и прилегающий болотный массив» - граница МО и Ярославской области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1977 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>20 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://dzen.ru/b/ZHsSvF2ojEZJX9L3" class="nubex1">Большое и Малое Туголянские озера</a>
+    </form>
+</div>
+<div style="float: right;" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="/static/img/Moscow_Region/1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/Moscow_Region/2.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/Moscow_Region/3.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/Moscow_Region/4.png" alt="Fourth slide">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+{% endblock %}

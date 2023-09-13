@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="topnav">
+  <a href="https://ecotourism.glitch.me/">Главная</a>
+  <a href="https://ecotourism.glitch.me/nature_reserves">Заповедники</a>
+  <a class="active" href="https://ecotourism.glitch.me/animals">Животные</a>
+  <a href="https://ecotourism.glitch.me/question">Задать вопрос</a>
+</div>
+<div class="topnav">
+  <a href="https://ecotourism.glitch.me/insectivores">Насекомоядные</a>
+  <a href="https://ecotourism.glitch.me/bats">Рукокрылые</a>
+  <a href="https://ecotourism.glitch.me/rodents">Грызуны</a>
+  <a class="active" href="https://ecotourism.glitch.me/predatory">Хищные</a>
+  <a href="https://ecotourism.glitch.me/ungulates">Непарнокопытные</a>
+  <a href="https://ecotourism.glitch.me/ruminants">Жвачные</a>
+  <a href="https://ecotourism.glitch.me/cetaceans">Китообразные</a>
+</div>
+<div class="topnav">
+  <a href="https://ecotourism.glitch.me/predatory">Псовые</a>
+  <a class="active" href="https://ecotourism.glitch.me/bearish">Медвежьи</a>
+  <a href="https://ecotourism.glitch.me/mustelidae">Куньи</a>
+  <a href="https://ecotourism.glitch.me/feline">Кошачьи</a>
+  <a href="https://ecotourism.glitch.me/hyena">Гиеновые</a>
+  <a href="https://ecotourism.glitch.me/pinnipeds">Ластоногие</a>
+</div>
+<div style="float: right;">
+    <form class="login_form_5">
+        <nav>
+            <h1>Псовые</h1>
+            <ul>
+                <li><a href="#section1">Медновский песец</a></li>
+                <li><a href="#section2">Песец</a></li>
+                <li><a href="#section3">Красный волк</a></li>
+            </ul>
+        </nav>
+        <h1></h1>
+        <h1 id="section1">Медновский песец</h1>
+        <h4>Можно найти:</h4>
+        <ul>
+            <li>На острове Медный</li>
+            <li>На острове Беринга</li>
+        </ul>
+        <h1></h1>
+        <h4>Больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Медновский_песец" class="nubex1">Медновский песец</a>
+        <h1></h1>
+        <h1 id="section2">Песец</h1>
+        <h4>Можно найти:</h4>
+        <ul>
+            <li>В южной части Прибайкалья</li>
+        </ul>
+        <h1></h1>
+        <h4>Больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Песец" class="nubex1">Песец</a>
+        <h1></h1>
+        <h1 id="section3">Красный волк</h1>
+        <h4>Можно найти:</h4>
+        <ul>
+            <li>На юге Дальнего Востока</li>
+            <li>На  Алтае</li>
+        </ul>
+        <h1></h1>
+        <h4>Больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Красный_волк" class="nubex1">Красный волк</a>
+    </form>
+</div>
+<img style="float: left;" src="static/img/animals/18.png" />
+<img style="float: left;" src="static/img/animals/19.png" />
+<img style="float: left;" src="static/img/animals/20.png" />
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="topnav">
+  <a href="https://ecotourism.glitch.me/">Главная</a>
+  <a href="https://ecotourism.glitch.me/nature_reserves">Заповедники</a>
+  <a class="active" href="https://ecotourism.glitch.me/animals">Животные</a>
+  <a href="https://ecotourism.glitch.me/question">Задать вопрос</a>
+</div>
+<div class="topnav">
+  <a href="https://ecotourism.glitch.me/insectivores">Насекомоядные</a>
+  <a href="https://ecotourism.glitch.me/bats">Рукокрылые</a>
+  <a href="https://ecotourism.glitch.me/rodents">Грызуны</a>
+  <a href="https://ecotourism.glitch.me/predatory">Хищные</a>
+  <a class="active" href="https://ecotourism.glitch.me/ungulates">Непарнокопытные</a>
+  <a href="https://ecotourism.glitch.me/ruminants">Жвачные</a>
+  <a href="https://ecotourism.glitch.me/cetaceans">Китообразные</a>
+</div>
+<div style="float: right;">
+    <form class="login_form_5">
+        <nav>
+            <h1>Непарнокопытные</h1>
+            <ul>
+                <li><a href="#section1">Лошадь Пржевальского</a></li>
+                <li><a href="#section2">Кулан</a></li>
+            </ul>
+        </nav>
+        <h1></h1>
+        <h1 id="section1">Лошадь Пржевальского</h1>
+        <h4>Можно найти:</h4>
+        <ul>
+            <li>В Москве</li>
+            <li>В Ростове-на-Дону</li>
+            <li>В Липецке</li>
+            <li>В Ярославле</li>
+            <li>В Оренбургской области</li>
+        </ul>
+        <h1></h1>
+        <h4>Больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Лошадь_Пржевальского" class="nubex1">Лошадь Пржевальского</a>
+        <h1></h1>
+        <h1 id="section2">Кулан</h1>
+        <h4>Можно найти:</h4>
+        <ul>
+            <li>В степях юга Западной Сибири</li>
+            <li>В степях Забайкалья</li>
+        </ul>
+        <h1></h1>
+        <h4>Больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Кулан" class="nubex1">Кулан</a>
+    </form>
+</div>
+<img style="float: left;" src="static/img/animals/41.png" />
+<img style="float: left;" src="static/img/animals/42.png" />
+{% endblock %}

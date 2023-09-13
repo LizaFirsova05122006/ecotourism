@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="topnav">
+  <a href="https://ecotourism.glitch.me/">Главная</a>
+  <a class="active" href="https://ecotourism.glitch.me/nature_reserves">Заповедники</a>
+  <a href="https://ecotourism.glitch.me/animals">Животные</a>
+  <a href="https://ecotourism.glitch.me/question">Задать вопрос</a>
+</div>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8636d5603d64a5c64c00b246095b8d977d7644f864a00c9914f9a14d8df2a62d&amp;width=1071&amp;height=502&amp;lang=ru_RU&amp;scroll=true"></script>
+<div style="float: left;">
+    <details>
+        <summary>Субъекты РФ</summary>
+        <a href="https://ecotourism.glitch.me/Altai_Territory" class="nubex2">Алтайский край</a>
+        <a href="https://ecotourism.glitch.me/Amur_region" class="nubex2">Амурская область</a>
+        <a href="https://ecotourism.glitch.me/Arkhangelsk_region" class="nubex2">Архангельская область</a>
+        <a href="https://ecotourism.glitch.me/Astrakhan_region" class="nubex2">Астраханская область</a>
+        <a href="https://ecotourism.glitch.me/Belgorod_region" class="nubex2">Белгородская область</a>
+        <a href="https://ecotourism.glitch.me/Bryansk_region" class="nubex2">Брянская область</a>
+        <a href="https://ecotourism.glitch.me/Vladimir_region" class="nubex2">Владимирская область</a>
+        <a href="https://ecotourism.glitch.me/Volgograd_region" class="nubex2">Волгоградская область</a>
+        <a href="https://ecotourism.glitch.me/Vologda_region" class="nubex2">Вологодская область</a>
+        <a href="https://ecotourism.glitch.me/Voronezh_region" class="nubex2">Воронежская область</a>
+        <a href="https://ecotourism.glitch.me/Donetsk_People_s_Republic" class="nubex2">Донецкая Народная Республика</a>
+        <a href="https://ecotourism.glitch.me/Jewish_JSC" class="nubex2">Еврейская АО</a>
+        <a href="https://ecotourism.glitch.me/Trans_Baikal_Territory" class="nubex2">Забайкальский край</a>
+        <a href="https://ecotourism.glitch.me/Zaporozhye_region" class="nubex2">Запорожская область</a>
+        <a href="https://ecotourism.glitch.me/Ivanovo_region" class="nubex2">Ивановская область</a>
+        <a href="https://ecotourism.glitch.me/Irkutsk_region" class="nubex2">Иркутская область</a>
+        <a href="https://ecotourism.glitch.me/Kabardino_Balkarian_Republic" class="nubex2">Кабардино-Балкарская Республика</a>
+        <a href="https://ecotourism.glitch.me/Kaliningrad_Region" class="nubex2">Калининградская область</a>
+        <a href="https://ecotourism.glitch.me/Kaluga_Region" class="nubex2">Калужская область</a>
+        <a href="https://ecotourism.glitch.me/Kamchatka_Territory" class="nubex2">Камчатский край</a>
+        <a href="https://ecotourism.glitch.me/Karachay_Cherkess_Republic" class="nubex2">Карачаево-Черкесская Республика</a>
+        <a href="https://ecotourism.glitch.me/Kemerovo_Region" class="nubex2">Кемеровская область</a>
+        <a href="https://ecotourism.glitch.me/Kirov_Region" class="nubex2">Кировская область</a>
+        <a href="https://ecotourism.glitch.me/Kostroma_Region" class="nubex2">Костромкая область</a>
+        <a href="https://ecotourism.glitch.me/Krasnodarskiy_Territory" class="nubex2">Краснодарский край</a>
+        <a href="https://ecotourism.glitch.me/Krasnoyarsk_Territory" class="nubex2">Красноярский край</a>
+        <a href="https://ecotourism.glitch.me/Kurgan_Region" class="nubex2">Курганская область</a>
+        <a href="https://ecotourism.glitch.me/Kursk_Region" class="nubex2">Курская область</a>
+        <a href="https://ecotourism.glitch.me/Leningrad_Region" class="nubex2">Ленинградская область</a>
+        <a href="https://ecotourism.glitch.me/Lipetsk_Region" class="nubex2">Липецкая область</a>
+        <a href="https://ecotourism.glitch.me/Luhansk_People_s_Republic" class="nubex2">Луганская Народная Республика</a>
+        <a href="https://ecotourism.glitch.me/Magadan_Region" class="nubex2">Магаданская область</a>
+        <a href="https://ecotourism.glitch.me/Moscow" class="nubex2">Москва</a>
+        <a href="https://ecotourism.glitch.me/Moscow_Region" class="nubex2">Московская область</a>
+        <a href="https://ecotourism.glitch.me/Murmansk_Region" class="nubex2">Мурманская область</a>
+        <a href="https://ecotourism.glitch.me/Nenets_AO" class="nubex2">Ненецкий АО</a>
+        <a href="https://ecotourism.glitch.me/Nizhny_Novgorod_Region" class="nubex2">Нижегородская область</a>
+        <a href="https://ecotourism.glitch.me/Novgorod_Region" class="nubex2">Новгородская область</a>
+        <a href="https://ecotourism.glitch.me/Novosibirsk_Region" class="nubex2">Новосибирская область</a>
+        <a href="https://ecotourism.glitch.me/Omsk_Region" class="nubex2">Омская область</a>
+        <a href="https://ecotourism.glitch.me/Orenburg_Region" class="nubex2">Оренбургская область</a>
+        <a href="https://ecotourism.glitch.me/Oryol_Region" class="nubex2">Орловская область</a>
+        <a href="https://ecotourism.glitch.me/Penza_Region" class="nubex2">Пензенская область</a>
+        <a href="https://ecotourism.glitch.me/Perm_Territory" class="nubex2">Пермский край</a>
+        <a href="https://ecotourism.glitch.me/Primorsky_Territory" class="nubex2">Приморский край</a>
+        <a href="https://ecotourism.glitch.me/Pskov_Region" class="nubex2">Псковская область</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Adygea" class="nubex2">Республика Адыгея</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Altai" class="nubex2">Республика Алтай</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Bashkortostan" class="nubex2">Республика Башкортостан</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Buryatia" class="nubex2">Республика Бурятия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Dagestan" class="nubex2">Республика Дагестан</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Ingushetia" class="nubex2">Республика Ингушетия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Kalmykia" class="nubex2">Республика Калмыкия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Karelia" class="nubex2">Республика Карелия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Komi" class="nubex2">Республика Коми</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Crimea" class="nubex2">Республика Крым</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Mari_El" class="nubex2">Республика Марий Эл</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Mordovia" class="nubex2">Республика Мордовия</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Sakha" class="nubex2">Республика Саха</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_North_Ossetia_Alania" class="nubex2">Республика Северная Осетия-Алания</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Tatarstan" class="nubex2">Республика Татарстан</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Tyva" class="nubex2">Республика Тыва</a>
+        <a href="https://ecotourism.glitch.me/Republic_of_Khakassia" class="nubex2">Республика Хакасия</a>
+        <a href="https://ecotourism.glitch.me/Rostov_Region" class="nubex2">Ростовская область</a>
+        <a href="https://ecotourism.glitch.me/Ryazan_Region" class="nubex2">Рязанская область</a>
+        <a href="https://ecotourism.glitch.me/Samara_Region" class="nubex2">Самарская область</a>
+        <a href="https://ecotourism.glitch.me/Saint_Petersburg" class="nubex2">Санкт-Петербург</a>
+        <a href="https://ecotourism.glitch.me/Saratov_Region" class="nubex2">Саратовская область</a>
+        <a href="https://ecotourism.glitch.me/Sakhalin_Region" class="nubex2">Сахалинская область</a>
+        <a href="https://ecotourism.glitch.me/Sverdlovsk_Region" class="nubex2">Свердловская область</a>
+        <a href="https://ecotourism.glitch.me/Sevastopol" class="nubex2">Севастополь</a>
+        <a href="https://ecotourism.glitch.me/Smolensk_Region" class="nubex2">Смоленская область</a>
+        <a href="https://ecotourism.glitch.me/Stavropol_Territory" class="nubex2">Ставропольский край</a>
+        <a href="https://ecotourism.glitch.me/Tambov_Region" class="nubex2">Тамбовская область</a>
+        <a href="https://ecotourism.glitch.me/Tver_Region" class="nubex2">Тверская область</a>
+        <a href="https://ecotourism.glitch.me/Tomsk_Region" class="nubex2">Томская область</a>
+        <a href="https://ecotourism.glitch.me/Tula_Region" class="nubex2">Тульская область</a>
+        <a href="https://ecotourism.glitch.me/Tyumen_Region" class="nubex2">Тюменская область</a>
+        <a href="https://ecotourism.glitch.me/Udmurt_Republic" class="nubex2">Удмуртская Республика</a>
+        <a href="https://ecotourism.glitch.me/Ulyanovsk_Region" class="nubex2">Ульяновская область</a>
+        <a href="https://ecotourism.glitch.me/Khabarovsk_Territory" class="nubex2">Хабаровский край</a>
+        <a href="https://ecotourism.glitch.me/Khanty_Mansiysk_JSC" class="nubex2">Ханты-Мансийский АО</a>
+        <a href="https://ecotourism.glitch.me/Kherson_Region" class="nubex2">Херсонская область</a>
+        <a href="https://ecotourism.glitch.me/Chelyabinsk_Region" class="nubex2">Челябинская область</a>
+        <a href="https://ecotourism.glitch.me/Chechen_Republic" class="nubex2">Чеченская Республика</a>
+        <a href="https://ecotourism.glitch.me/Chuvash_Republic" class="nubex2">Чувашская Республика</a>
+        <a href="https://ecotourism.glitch.me/Chukotsiy_JSC" class="nubex2">Чукотсий АО</a>
+        <a href="https://ecotourism.glitch.me/Yamalo_Nenets_JSC" class="nubex2">Ямало-Ненецкий АО</a>
+        <a href="https://ecotourism.glitch.me/Yaroslavl_Region" class="nubex2">Ярославская область</a>
+    </details>
+</div>
+<div style="float: right;">
+    <form class="login_form_3">
+        <nav>
+            <h1>Липецкая область</h1>
+            <ul>
+                <li><a href="#section1">Галичья Гора</a></li>
+                <li><a href="#section2">Усадьба Скорняково-Архангельское</a></li>
+                <li><a href="#section3">Природный парк Кудыкина гора</a></li>
+                <li><a href="#section4">Силикатные озёра</a></li>
+                <li><a href="#section5">Воргольские скалы</a></li>
+                <li><a href="#section6">Мещерский дендрарий</a></li>
+            </ul>
+        </nav>
+        <h1 id="section1">Галичья Гора</h1>
+        <h4>Самый маленький заповедник мира</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1925 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>2,3 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://wikiway.com/russia/zapovednik-galichya-gora/" class="nubex1">Галичья Гора</a>
+        <h1></h1>
+        <h1 id="section2">Усадьба Скорняково-Архангельское</h1>
+        <h4>Старинная усадьба XIX века, расположенная в селе Скорняково, Задонском районе Липецкой области.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1680 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,3 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Усадьба_Скорняково-Архангельское" class="nubex1">Усадьба Скорняково-Архангельское</a>
+        <h1></h1>
+        <h1 id="section3">Природный парк Кудыкина гора</h1>
+        <h4>Парк природных чудес в Липецкой области России.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>2007 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>5 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Кудыкина_гора_(сафари-парк)" class="nubex1">Природный парк Кудыкина гора</a>
+        <h1></h1>
+        <h1 id="section4">Силикатные озёра</h1>
+        <h4>Живописные озёра в Левобережном округе города Липецка.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1990 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,45 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Силикатные_озёра" class="nubex1">Силикатные озёра</a>
+        <h1></h1>
+        <h1 id="section5">Воргольские скалы</h1>
+        <h4>Это ярко выраженные поднятия рельефа в участке государственного заповедника «Галичья гора».</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1963 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>0,31 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Воргольские_скалы" class="nubex1">Воргольские скалы</a>
+        <h1></h1>
+        <h1 id="section6">Мещерский дендрарий</h1>
+        <h4>Крупнейшая по площади лесостепная опытно-селекционная станцияа.</h4>
+        <h1></h1>
+        <h4>Год основания:</h4><h5>1924 год</h5>
+        <h1></h1>
+        <h4>Примерная площадь:</h4><h5>5,42 км<sup>2</sup></h5>
+        <h1></h1>
+        <h4>Узнать больше информации:</h4><a href="https://ru.wikipedia.org/wiki/Мещерский_дендрарий" class="nubex1">Мещерский дендрарий</a>
+      </form>
+</div>
+<div style="float: right;" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="/static/img/Lipetsk/1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/Lipetsk/2.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/Lipetsk/3.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/Lipetsk/4.png" alt="Fourth slide">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+{% endblock %}
